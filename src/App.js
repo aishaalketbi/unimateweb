@@ -10,7 +10,7 @@ const App = () => {
     const authToken = cookies.AuthToken
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/unimateweb">
             <Routes>
                 <Route path="/" element={<Home />} />
                 {authToken && <Route path="/dashboard" element={<Dashboard />} />}
