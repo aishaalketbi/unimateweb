@@ -31,7 +31,7 @@ const AuthModal = ({setShowModal, isSignUp}) => {
             console.log('Making a POST request to signup/login...')
 
             // Make POST request to backend (either signup or login)
-            const response = await axios.post(`https://unimateweb.herokuapp.com/${isSignUp ? 'signup' : 'login'}`, {
+            const response = await axios.post(`https://unimateweb-12c372a51b9f.herokuapp.com/${isSignUp ? 'signup' : 'login'}`, {
                 email,
                 password
             })

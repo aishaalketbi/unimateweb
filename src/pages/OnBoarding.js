@@ -38,7 +38,7 @@ const OnBoarding = () => {
 
         e.preventDefault()
         try {
-            const response = await axios.put('https://unimateweb.herokuapp.com/user', {formData})
+            const response = await axios.put('https://unimateweb-12c372a51b9f.herokuapp.com/user', {formData})
             const success = response.status === 200
             if (success) navigate('/dashboard')
         } catch (err) {

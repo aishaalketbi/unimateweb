@@ -11,7 +11,7 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
 
     const getMatches = async () => {
         try {
-            const response = await axios.get("https://unimateweb.herokuapp.com/users", {
+            const response = await axios.get("https://unimateweb-12c372a51b9f.herokuapp.com/users", {
                 params: { userIds: JSON.stringify(matchedUserIds) },
             });
             setMatchedProfiles(response.data);

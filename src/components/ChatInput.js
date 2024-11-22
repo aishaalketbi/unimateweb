@@ -15,7 +15,7 @@ const ChatInput = ({ user, clickedUser, getUserMessages, getClickedUsersMessages
         }
 
         try {
-            await axios.post('https://unimateweb.herokuapp.com/message', { message })
+            await axios.post('https://unimateweb-12c372a51b9f.herokuapp.com/message', { message })
             getUserMessages()
             getClickedUsersMessages()
             setTextArea("")
